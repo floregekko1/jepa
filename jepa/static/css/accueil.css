@@ -1,0 +1,28 @@
+@import url(//fonts.googleapis.com/css?family=Crimson+Text);
+@import url(animate.css);
+@import url(hotel-pictograms.css);
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+body, html {
+	padding: 0;
+	margin: 0;	
+}
+
+body {
+	font-family:'Crimson Text', serif;
+}
+
+a, a:hover {
+	text-decoration: none;
+}
+
+/* header */
+.header {
+  background-color: #0BFF84;
+  height: 70px;
+  line-height: 70px;
+}
+
+.menu {
+	
+
+}

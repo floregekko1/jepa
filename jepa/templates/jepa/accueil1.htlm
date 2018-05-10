@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+     {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'css/accueil.css' %}">
+   <title>{% block title %}Bienvenue sur le site de la jeunesse panafricaine!{% endblock %}</title>
+</head>
+<body>
+
+  <nav>
+       {% block nav %}
+       <div id="menu">
+       <ul id="onglets">
+            <li><a href="/">Accueil</a></li>
+            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/nousconnaitre/"> Qui sommes-nous?</a></li>
+	    <li><a href="/archive/">Archives</a></li>
+	    <li><a href="/chat/">Blog</a></li>
+            <li><a href="/dons/">Faire un don</a></li>
+       </ul>
+       </div>
+	{% endblock %}
+     
+   </nav>
+
+</body>
+</html>
+

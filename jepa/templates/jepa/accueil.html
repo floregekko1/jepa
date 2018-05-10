@@ -1,0 +1,79 @@
+
+{% block content %}
+ {% load staticfiles %}
+<html>
+  <meta charset="utf-8">
+<head>
+{% load staticfiles %}
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'css/bootstrap-grid.css' %}">
+<link rel="stylesheet" href="{% static 'css/accueil.css' %}"> 
+<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+{% load staticfiles %}
+ <script src="{% static 'js/jquery.js' %}"></script>
+  <script src="{% static 'js/jquery-migrate-1.2.1.js' %}"></script>
+
+  <!--[if lt IE 9]>
+  <html class="lt-ie9">
+  <div style=' clear: both; text-align:center; position: relative;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/..">
+	{% load static %}
+      <img src="{% static 'images/ie8-panel/warning_bar_0000_us.jpg' %}" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
+    </a>
+  </div>
+  <script src="{% static 'js/html5shiv.js' %}"></script>
+  <![endif]-->
+
+  <script src="{% static 'js/device.min.js' %}"></script>
+</head>
+<body>
+<header class="container-fluid header">
+       {% block nav %}
+   <div class="container">
+     <nav class="menu">
+       
+            <a href="/accueil/">Accueil</a>
+            <a href="/contact/">Contact</a>
+            <a href="/nousconnaitre/"> Qui sommes-nous?</a>
+	    <a href="/archive/">Archives</a>
+            <a href="/blog/">Blog</a>
+	    <a href="/chat/">chat</a>
+            <a href="/dons/">Faire un don</a>
+       
+      </nav>
+   </div>
+	{% endblock %}
+{% endblock content %}
+
+</header>
+<section class="container-fluid article">
+ <div class="container">
+  <div class="row">
+    <article class="col-md-4 col-lg-4 col-xs-12 col-sm-12">
+	<h1> AFRIQUE</h1>
+         <p>e faux-texte (également appelé lorem ipsum, lipsum, ou bolo bolo) est, en imprimerie, un texte sans            signification, dont le seul objectif est de calibrer le contenu d'une page par du texte, fût-il non éditorial, pour travailler sur la seule mise en forme de la page. Le texte définitif (qui a une signification) prendra la place du ...
+</p>
+    </article>
+    <article class="col-md-4 col-lg-4 col-xs-12 col-sm-12">
+	<h1> AVENIR</h1>
+         <p>faux-texte (également appelé lorem ipsum, lipsum, ou bolo bolo) est, en imprimerie, un texte sans            signification, dont le seul objectif est de calibrer le contenu d'une page par du texte, fût-il non éditorial, pour travailler sur la seule mise en forme de la page. Le texte définitif (qui a une signification) prendra la place du ...
+</p>
+    </article>
+    <article class="col-md-4 col-lg-4 col-xs-12 col-sm-12">
+	<h1> ESPOIR</h1>
+         <p>e faux-texte (également appelé lorem ipsum, lipsum, ou bolo bolo) est, en imprimerie, un texte sans            signification, dont le seul objectif est de calibrer le contenu d'une page par du texte, fût-il non éditorial, pour travailler sur la seule mise en forme de la page. Le texte définitif (qui a une signification) prendra la place du ...
+</p>
+    </article>
+  </div>
+ </div>
+</section>
+
+      <footer class="row">
+        <div class="col-lg-12">
+          Pied de page
+        </div>
+      </footer>
+    
+  </body>
+</html>

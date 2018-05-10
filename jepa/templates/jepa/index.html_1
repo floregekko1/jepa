@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>JEPA</title>
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no"/>
+  <link rel="icon" href="../static/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../static/css/grid.css">
+  <link rel="stylesheet" href="../static/css/style.css">
+  <link rel="stylesheet" href="../static/css/booking.css"/>
+  <link rel="stylesheet" href="../static/css/jquery.fancybox.css"/>
+  <link rel="stylesheet" href="../static/css/owl-carousel.css"/>
+
+  <script src="../static/js/jquery.js"></script>
+  <script src="../static/js/jquery-migrate-1.2.1.js"></script>
+
+  <!--[if lt IE 9]>
+  <html class="lt-ie9">
+  <div style=' clear: both; text-align:center; position: relative;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/..">
+      <img src="../static/images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
+    </a>
+  </div>
+  <script src="../static/js/html5shiv.js"></script>
+  <![endif]-->
+
+  <script src='../static/js/device.min.js'></script>
+</head>
+
+<body>
+<div class="page">
+  <!--========================================================
+                            HEADER
+  =========================================================-->
+<header class="vide" data-vide-bg="../static/video/thomas-sankara">
+    <div class="container vide_content">
+
+      <div class="brand">
+        <img src="../static/images/logo.png" alt=""/>
+        
+        <h1 class="brand_name">
+          <a href="./">
+            Jeunesse Panafricaine
+          </a>
+        </h1>
+        <p class="brand_slogan">
+          web design NANA
+        </p>
+      </div>
+
+      <h2>Le monde c'est nous! </h2>
+
+      <form id="bookingForm" class="booking-form">
+        <div class="tmInput">
+          <input name="Name" placeHolder="Name" type="text" data-constraints='@NotEmpty @Required @AlphaSpecial'>
+        </div>
+        <div class="tmInput">
+          <input name="Email" placeHolder="E - mail " type="text" data-constraints="@NotEmpty @Required @Email">
+        </div>
+        <div class="tmInput">
+          <input name="Phone" placeHolder="Phone" type="text" data-constraints="@NotEmpty @Required @Phone">
+        </div>
+        <div class="booking-form_controls">
+          <a href="#" class="btn" data-type="submit">Entrer</a>
+        </div>
+      </form>
+    </div>
+  </header>
+
+  <!--========================================================
+                            CONTENT
+  =========================================================-->
+  <main>
+    <section class="well">
+      <div class="container center">
+        <h2>
+          Je ne suis pas Africain parce que je suis né en Afrique <br/>
+          mais parce que l'Afrique est née en moi!
+        </h2>
+        <hr/>
+        <p> Kwame Nkrumah
+        </p>
+        
+      </div>
+    </section>
+
+    <section class="parallax center bg-secondary2" data-url="../static/images/parallax.jpg" data-mobile="true" data-speed="0.5">
+      <div class="well3">
+        <div class="container">
+          <h2>
+            Tuez Sankara, des milliers de Sankara naîtront! <br/>
+          
+          </h2>
+          <hr/>
+          <p>Thomas Sankara
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="well2 bg-secondary">
+      <div class="container center">
+        <div class="row">
+          <div class="grid_8 preffix_2">
+            <h2>Souscrire</h2>
+
+            <form id="subscribe-form" class="subscribe-form">
+
+              <label class="email">
+                <input type="email" value="E - mail">
+                <span class="error">*Invalid email.</span>
+                <span class="success">Votre demande de validation a été envoyé!</span>
+              </label>
+              <a class="btn" data-type="submit" href="#">Souscrire</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--========================================================
+                            FOOTER
+  =========================================================-->
+  <footer>
+    <div class="parallax" data-url="../static/images/parallax2.jpg" data-mobile="true" data-speed="0.5 " data-direction="inverted">
+      <div class="well4">
+        <div class="container center wow fadeInUp" data-wow-delay="0.2s">
+          <hr/>
+          <h2>JEPA </h2>
+
+          <h3>Notre lutte n'a pas pour but d'haïr ou d'aimer le colon. C'est une question de souveraineté et de survie.</h3>
+          <a class="btn" href='#'>ENTRER</a>
+
+          <div class="copyright">
+            © <span id="copyright-year"></span> Tous droits reservés
+            <!-- {%FOOTER_LINK} -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="../static/js/script.js"></script>
+<!-- coded by Diversant -->
+</body>
+</html>
